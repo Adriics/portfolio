@@ -13,7 +13,6 @@ import Avatar from "@mui/material/Avatar"
 import Button from "@mui/material/Button"
 import Tooltip from "@mui/material/Tooltip"
 import MenuItem from "@mui/material/MenuItem"
-import AdbIcon from "@mui/icons-material/Adb"
 
 const pages = ["Home", "Resume", "Portfolio", "Blog", "Contact"]
 const settings = ["Profile", "Account", "Dashboard", "Logout"]
@@ -40,7 +39,7 @@ function ResponsiveAppBar() {
   }
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ bgcolor: "#121212" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -90,7 +89,15 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: "center" }}>{page}</Typography>
+                  <Typography
+                    sx={{
+                      textAlign: "center",
+                      transition: "background-color 0.3s ease",
+                      "&:hover": { backgroundColor: "#000000" },
+                    }}
+                  >
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>

@@ -1,14 +1,26 @@
+import Image from "next/image"
+
 export function Hero() {
   return (
     <>
-      <header>
-        <div className="flex flex-col items-center justify-center text-center p-8">
-          <h1 className="text-yellow-500">Welcome to Our Website</h1>
-          <p className="text-red-500">
-            Discover amazing content and connect with us!
-          </p>
+      <section className="block w-full h-full">
+        <div className="grid grid-cols-2">
+          <div className="flex flex-col justify-center items-start px-10 gap-4">
+            <p className="text-2xl">Hi! Im Adrian</p>
+            <h2 className="font-poppins text-5xl font-bold">
+              FullStack <span className="text-green-600">Developer</span>
+            </h2>
+            <p>From concept to deployment</p>
+          </div>
+          <div>
+            <Image
+              src="/photo-black.jpg"
+              alt="Hero Image"
+              className="object-contain"
+            />
+          </div>
         </div>
-      </header>
+      </section>
     </>
   )
 }
