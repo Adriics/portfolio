@@ -4,7 +4,7 @@ import Image from "next/image"
 export function Hero() {
   return (
     <>
-      <section className="block w-full">
+      <section className="block w-full min-h-screen p-10 sm:p-17">
         <div className="grid grid-cols-2">
           <div className="flex flex-col justify-center px-18 gap-4">
             <p className="text-2xl">Hi! Im Adrian</p>
@@ -35,8 +35,8 @@ export function Hero() {
               src="/photo-black.jpg"
               alt="Hero Image"
               className="object-contain"
-              width={400}
-              height={200}
+              width={470}
+              height={470}
             />
           </div>
         </div>

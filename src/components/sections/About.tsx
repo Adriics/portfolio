@@ -7,7 +7,7 @@ export default function About() {
   const location = "Barcelona, Spain"
   const email = "adriancalvachesanchez@gmail.com"
   return (
-    <section className="font-sans flex flex-col items-center min-h-screen p-8 pb-20 gap-32 sm:p-20">
+    <section className="font-sans flex flex-col min-h-screen items-center gap-32 sm:p-20">
       <div className="grid grid-cols-2 gap-8">
         <div className="flex flex-col justify-center px-18 gap-4">
           <Image
