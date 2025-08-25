@@ -4,7 +4,7 @@ export function Projects() {
   return (
     <section className="font-sans flex flex-col  p-8 pb-20 sm:p-20">
       <div className="relative mb-10">
-        <h2 className="font-extralight italic opacity-30 text-gray-50 text-4xl uppercase absolute tracking-widest">
+        <h2 className="font-extrabold italic opacity-30 text-gray-50 text-4xl uppercase absolute tracking-widest">
           Projects
         </h2>
         <h4 className="tracking-widest font-poppins pt-2 text-2xl font-bold">
@@ -12,7 +12,7 @@ export function Projects() {
         </h4>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="flex items-center">
         <ProjectCard />
       </div>
     </section>

@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export function ProjectCard() {
   const projects = [
     {
@@ -8,20 +10,46 @@ export function ProjectCard() {
       projectUrl: "https://spotimy.vercel.app/",
     },
     {
-      title: "Project 2",
-      description: "Description for project 2",
-      imageUrl: "/path/to/image2.jpg",
+      title: "Complete API Rest with Node.js, Express",
+      description:
+        "That project is a RESTful API built with Node.js and Express, like a tournament system.",
+      imageUrl: "/api.png",
       projectUrl: "https://example.com/project2",
     },
   ]
 
   return (
-    <section className="grid grid-cols-2 gap-4 bg-gray-800 p-4 rounded-lg hover:scale-105 transition-transform cursor-pointer">
-      <div>
-        {projects.map((p) => (
-          <a key={p.title}>{p.title}</a>
+    <>
+      <section className="w-full font-sans grid grid-cols-1 p-8 pb-20 sm:p-20">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="w-full flex max-w-3xl items-center mb-8 border rounded-lg overflow-hidden shadow-lg"
+          >
+            <Image
+              src={project.imageUrl}
+              alt={project.title}
+              width={600}
+              height={400}
+              className="w-100 h-80 object-contain"
+            />
+            <article>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                <p className="text-gray-300 mb-4">{project.description}</p>
+                <a
+                  href={project.projectUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  View Project
+                </a>
+              </div>
+            </article>
+          </div>
         ))}
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
