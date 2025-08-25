@@ -3,7 +3,7 @@ import Image from "next/image"
 export function ProjectCard() {
   const projects = [
     {
-      title: "Spot&my",
+      title: "Spotimy - Music Playlist App",
       description:
         "It's a web application that allows users to search for songs, create playlists, and share them with friends. Built with React, Node.js, express.",
       imageUrl: "/spotimy.png",
