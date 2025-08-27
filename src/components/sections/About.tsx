@@ -6,6 +6,7 @@ export default function About() {
   const age = new Date().getFullYear() - 2004
   const location = "Barcelona, Spain"
   const email = "adriancalvachesanchez@gmail.com"
+
   return (
     <section className="font-sans flex flex-col min-h-screen items-center gap-32 sm:p-20">
       <div className="grid grid-cols-2 gap-8">
