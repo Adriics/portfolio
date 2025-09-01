@@ -4,15 +4,15 @@ import Image from "next/image"
 export function Hero() {
   return (
     <>
-      <section className="block w-full min-h-screen p-10 sm:p-17">
-        <div className="grid grid-cols-2">
-          <div className="flex flex-col justify-center px-18 gap-4">
-            <p className="text-2xl">Hi! Im Adrian</p>
-            <h2 className="font-poppins text-5xl font-bold">
+      <section className="block w-full min-h-screen p-10 ">
+        <div className="grid grid-cols-1 justify-center md:grid-cols-2 md:p-16 lg:p-4">
+          <div className="flex flex-col text-center w-full justify-center px-4 gap-4">
+            <p className="text-2xl lg:text-3xl">Hi! Im Adrian</p>
+            <h2 className="font-poppins text-3xl md:text-3xl font-bold lg:text-4xl">
               FullStack <span className="text-green-600">Developer</span>
             </h2>
-            <p>From concept to deployment</p>
-            <div className="flex gap-8 pt-4">
+            <p className="lg:text-xl">From concept to deployment</p>
+            <div className="flex flex-col gap-4 pb-10 md:flex-row md:justify-center">
               <Button
                 aria-label="Descargar CV"
                 component="a"
@@ -34,7 +34,7 @@ export function Hero() {
             <Image
               src="/photo-black.jpg"
               alt="Hero Image"
-              className="object-contain"
+              className="object-contain w-full max-w-sm mx-auto"
               width={470}
               height={470}
             />

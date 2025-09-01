@@ -20,11 +20,11 @@ export function ProjectCard() {
 
   return (
     <>
-      <section className="w-full font-sans grid grid-cols-1 p-8 pb-20 sm:p-20">
+      <section className="w-full font-sans grid grid-cols-1 p-8 pb-20 lg:grid-cols-2 gap-10 md:items-center">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="w-full flex max-w-3xl items-center mb-8 border rounded-lg overflow-hidden shadow-lg"
+            className="w-full flex flex-col max-w-3xl items-center mb-8 border rounded-lg overflow-hidden shadow-lg md:flex-col md:justify-center md:items-center p-4"
           >
             <Image
               src={project.imageUrl}
@@ -35,13 +35,17 @@ export function ProjectCard() {
             />
             <article>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-300 mb-4">{project.description}</p>
+                <h3 className="text-xl font-bold mb-2 md:text-xl">
+                  {project.title}
+                </h3>
+                <p className="text-gray-300 mb-4 text-sm md:text-xl">
+                  {project.description}
+                </p>
                 <a
                   href={project.projectUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline"
+                  className="text-blue-400 text-xl hover:underline md:text-sm"
                 >
                   View Project
                 </a>
