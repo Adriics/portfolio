@@ -38,22 +38,21 @@ export default function Skills() {
         clean and efficient web applications.
       </p>
 
-      <div className="grid grid-cols-6">
-        <div className="border-r-4 border-amber-300 w-30 h-36 flex items-center justify-center mt-40">
+      {/* Contenedor grid principal */}
+      <div className="mt-20 grid md:grid-cols-[auto_1fr]">
+        {/* Texto SKILLS lateral para pantallas grandes */}
+        <div className="hidden md:flex items-center justify-center border-r-4 border-amber-300 px-4">
           <span className="font-bold text-green-600 rotate-270 tracking-widest text-xl">
             SKILLS
           </span>
         </div>
 
-        {skills.map((skill, index) => (
-          <>
-            <div key={skill.name} className="w-35 h-50 mt-20">
-              <SkillCard {...skill} />
-            </div>
-
-            {skill.name === "React" && <div key={`empty-${index}`}></div>}
-          </>
-        ))}
+        {/* Cards */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 p-4">
+          {skills.map((skill) => (
+            <SkillCard key={skill.name} {...skill} />
+          ))}
+        </div>
       </div>
     </section>
   )

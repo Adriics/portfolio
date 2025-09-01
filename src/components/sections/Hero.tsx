@@ -24,6 +24,7 @@ export function Hero() {
                 aria-label="Descargar CV"
                 component="a"
                 href="/Curriculum_Adrian_Calvache.pdf"
+                // Ahhkafdnks
                 download="Curriculum_Adrian_Calvache.pdf"
               >
                 CV
