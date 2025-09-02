@@ -5,6 +5,7 @@ import Box from "@mui/material/Box"
 import TextField from "@mui/material/TextField"
 import SendIcon from "@mui/icons-material/Send"
 import { useState } from "react"
+import { pages } from "../layout/ResponsiveAppBar"
 
 export function Contact() {
   const [name, setName] = useState("")
@@ -44,7 +45,7 @@ export function Contact() {
   }
 
   return (
-    <section className="grid grid-cols-1 p-8 sm:p-20 bg-gray-950">
+    <section id="contact" className="grid grid-cols-1 p-8 sm:p-20 bg-gray-950">
       <h1 className="w-49 text-4xl font-semibold tracking-widest font-poppins border-b-4 border-b-amber-300 mb-20">
         Contact
       </h1>
@@ -58,22 +59,15 @@ export function Contact() {
         </div>
 
         <div className="flex gap-8 text-lg pt-18 font-semibold">
-          <a href="#" className="hover:text-green-500 transition-colors">
-            Home
-          </a>
-          <a href="#" className="hover:text-green-500 transition-colors">
-            About
-          </a>
-          <a href="#" className="hover:text-green-500 transition-colors">
-            Projects
-          </a>
-          <a href="#" className="hover:text-green-500 transition-colors">
-            Skills
-          </a>
+          {pages.map((p) => (
+            <div key={p.name}>
+              <a href={p.href}>{p.name}</a>
+            </div>
+          ))}
         </div>
 
         {/* Formulario */}
-        <div className="pt-10">
+        <div className="pt-10 md:w-1/2">
           <Box
             component="form"
             onSubmit={handleSubmit}

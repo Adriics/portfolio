@@ -2,7 +2,10 @@ import { ProjectCard } from "../ui/ProjectCard"
 
 export function Projects() {
   return (
-    <section className="font-sans flex flex-col  p-8 pb-20 sm:p-20">
+    <section
+      id="portfolio"
+      className="font-sans flex flex-col  p-8 pb-20 sm:p-20"
+    >
       <div className="relative mb-10">
         <h2 className="font-extrabold italic opacity-20 text-gray-500 text-6xl uppercase absolute tracking-widest">
           Projects

@@ -23,7 +23,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="flex flex-col">
+    <section id="skills" className="flex flex-col">
       <div className="relative pb-10 p-8 sm:p-20">
         <h2 className="absolute text-6xl text-gray-500 opacity-20 italic font-poppins font-extrabold tracking-widest">
           SKILLS & TECHS
