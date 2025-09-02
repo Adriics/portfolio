@@ -15,6 +15,7 @@ import MenuItem from "@mui/material/MenuItem"
 export const pages = [
   { name: "Home", href: "#home" },
   { name: "Resume", href: "#resume" },
+  { name: "Experience", href: "#experience" },
   { name: "Portfolio", href: "#portfolio" },
   { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" },
