@@ -7,7 +7,7 @@ export function ProjectCard() {
       description:
         "It's a web application that allows users to search for songs, create playlists, and share them with friends. Built with React, Node.js, express.",
       imageUrl: "/spotimy.png",
-      projectUrl: "https://spotimy.vercel.app/",
+      projectUrl: "https://mini-spotify-eta.vercel.app/",
     },
     {
       title: "Complete API Rest with Node.js, Express",
