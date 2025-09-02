@@ -83,7 +83,12 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                <MenuItem
+                  key={page.name}
+                  component="a"
+                  href={page.href}
+                  onClick={handleCloseNavMenu}
+                >
                   <Typography
                     sx={{
                       textAlign: "center",
