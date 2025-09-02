@@ -130,7 +130,7 @@ export function Contact() {
                 {messageFeedback}
               </Alert>
             )}
-            <div className="flex text-sm pt-18 font-semibold">
+            <div className="flex text-sm p-8 pt-18 font-semibold">
               {pages.map((p) => (
                 <div key={p.name}>
                   <a href={p.href}>{p.name}</a>
