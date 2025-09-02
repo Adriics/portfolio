@@ -15,7 +15,7 @@ export function Projects() {
         </h4>
       </div>
 
-      <div className="flex items-center">
+      <div className="flex">
         <ProjectCard />
       </div>
     </section>

@@ -20,11 +20,11 @@ export function ProjectCard() {
 
   return (
     <>
-      <section className="w-full font-sans grid grid-cols-1 p-8 pb-20 lg:grid-cols-2 gap-10 md:items-center">
+      <section className="w-full font-sans grid grid-cols-1 pb-20 lg:grid-cols-2 gap-10 md:items-center">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="w-full flex flex-col max-w-3xl items-center mb-8 border rounded-lg overflow-hidden shadow-lg md:flex-col md:justify-center md:items-center"
+            className="w-full flex flex-col max-w-5xl items-center mb-8 border rounded-lg overflow-hidden shadow-lg md:flex-col md:justify-center md:items-center"
           >
             <Image
               src={project.imageUrl}
