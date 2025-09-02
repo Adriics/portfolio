@@ -58,14 +58,6 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="flex gap-4 text-lg pt-18 font-semibold">
-          {pages.map((p) => (
-            <div key={p.name}>
-              <a href={p.href}>{p.name}</a>
-            </div>
-          ))}
-        </div>
-
         {/* Formulario */}
         <div className="pt-10 md:w-1/2">
           <Box
@@ -138,6 +130,13 @@ export function Contact() {
                 {messageFeedback}
               </Alert>
             )}
+            <div className="flex text-sm pt-18 font-semibold">
+              {pages.map((p) => (
+                <div key={p.name}>
+                  <a href={p.href}>{p.name}</a>
+                </div>
+              ))}
+            </div>
           </Box>
         </div>
       </div>
