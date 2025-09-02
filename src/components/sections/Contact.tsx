@@ -58,7 +58,7 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="flex gap-8 text-lg pt-18 font-semibold">
+        <div className="flex gap-4 text-lg pt-18 font-semibold">
           {pages.map((p) => (
             <div key={p.name}>
               <a href={p.href}>{p.name}</a>
