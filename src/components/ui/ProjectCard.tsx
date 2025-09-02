@@ -35,7 +35,7 @@ export function ProjectCard() {
             />
             <article>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 md:text-xl">
+                <h3 className="text-xl font-bold mb-2 md:text-2xl">
                   {project.title}
                 </h3>
                 <p className="text-gray-300 mb-4 text-sm md:text-xl">

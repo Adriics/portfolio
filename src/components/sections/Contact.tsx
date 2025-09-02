@@ -44,11 +44,11 @@ export function Contact() {
   }
 
   return (
-    <section className="flex flex-col p-8 sm:p-20 bg-gray-950">
+    <section className="grid grid-cols-1 p-8 sm:p-20 bg-gray-950">
       <h1 className="w-49 text-4xl font-semibold tracking-widest font-poppins border-b-4 border-b-amber-300 mb-20">
         Contact
       </h1>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-1">
         {/* Texto de presentación */}
         <div>
           <p>
@@ -57,8 +57,7 @@ export function Contact() {
           </p>
         </div>
 
-        {/* Navegación */}
-        <div className="flex flex-col gap-3 text-lg font-semibold">
+        <div className="flex gap-8 text-lg pt-18 font-semibold">
           <a href="#" className="hover:text-green-500 transition-colors">
             Home
           </a>
@@ -74,7 +73,7 @@ export function Contact() {
         </div>
 
         {/* Formulario */}
-        <div>
+        <div className="pt-10">
           <Box
             component="form"
             onSubmit={handleSubmit}
