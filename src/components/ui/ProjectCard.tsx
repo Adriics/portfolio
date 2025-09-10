@@ -5,7 +5,7 @@ export function ProjectCard() {
     {
       title: "Spotimy - Music Playlist App",
       description:
-        "It's a web application that allows users to search for songs, create playlists, and share them with friends. Built with React, Node.js, express. For now, only available on computer please, responsive design will be finished very soon.",
+        "It's a web application that allows users to search for songs, create playlists, and share them with friends. Built with React, Node.js, express. For now, only available on computer please, responsive design will be finished very   soon.",
       imageUrl: "/spotimy.png",
       projectUrl: "https://mini-spotify-eta.vercel.app/",
     },
@@ -15,6 +15,12 @@ export function ProjectCard() {
         "That project is a RESTful API built with Node.js and Express, like a tournament system.",
       imageUrl: "/api.png",
       projectUrl: "https://example.com/project2",
+    },
+    {
+      title: "Code Reviewer with AI",
+      description:
+        "This project is a app built in Vite and React, Typescript and Tailwind that help you with your code with help or improves, clean code...",
+      imageUrl: "/review.png",
     },
   ]
 
