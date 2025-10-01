@@ -10,7 +10,7 @@ export function Projects() {
         <h2 className="font-extrabold italic opacity-20 text-gray-500 text-6xl uppercase absolute tracking-widest">
           Projects
         </h2>
-        <h4 className="tracking-widest font-poppins pt-4 px-3.5 text-4xl font-bold">
+        <h4 className="tracking-widest font-poppins pt-4 px-3.5 text-4xl font-bold text-[#B7990D]">
           My work
         </h4>
       </div>

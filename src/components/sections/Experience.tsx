@@ -36,20 +36,17 @@ export default function Experience() {
   ]
 
   return (
-    <section
-      id="experience"
-      className="min-h-screen bg-[#121212] text-white px-6 py-20"
-    >
+    <section id="experience" className="min-h-screen text-[#B7990D] px-6 py-20">
       <h2 className="text-4xl font-bold text-center mb-12">Work Experience</h2>
 
       <div className="max-w-4xl mx-auto space-y-8">
         {jobs.map((job, idx) => (
-          <div key={idx} className="border-l-4 border-amber-400 pl-6 relative">
-            <span className="absolute -left-[10px] top-1 w-5 h-5 bg-amber-400 rounded-full"></span>
-            <p className="text-sm text-gray-400">{job.date}</p>
+          <div key={idx} className="border-l-4 pl-6 relative">
+            <span className="absolute -left-[12px] top-1 w-5 h-5 bg-[#B7990D] rounded-full"></span>
+            <p className="text-sm text-[#F2F4CB]">{job.date}</p>
             <h3 className="text-xl font-semibold">{job.title}</h3>
-            <p className="text-gray-300 mb-2">{job.company}</p>
-            <ul className="list-disc list-inside text-gray-400">
+            <p className="text-[#F2F4CB] mb-2">{job.company}</p>
+            <ul className="list-disc list-inside text-white">
               {job.tasks.map((task, i) => (
                 <li key={i}>{task}</li>
               ))}

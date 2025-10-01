@@ -15,7 +15,7 @@ export default function SkillCard({
     <>
       <div
         className="p-4 flex flex-col items-center gap-7"
-        style={{ backgroundColor: "#161716" }}
+        style={{ backgroundColor: "transparent" }}
       >
         <Image alt={altImage} src={srcImage} width={100} height={100} />
         <p>{name}</p>
