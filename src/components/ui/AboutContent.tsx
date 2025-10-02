@@ -22,10 +22,10 @@ export function AboutContent() {
           question: `How are these games made?`
         </p>
         <p className="pt-10 text-lg leading-7">
-          Since then, I’ve been learning to code — starting with HTML, CSS, and
-          JavaScript — and expanding my skills into modern frameworks and mobile
-          app development. I create digital solutions with the same curiosity
-          and excitement that first inspired me to code.
+          Since then, I’ve been learning to code — starting with JavaScript,
+          React, Node — and expanding my skills into modern frameworks and
+          mobile app development. I create digital solutions with the same
+          curiosity and excitement that first inspired me to code.
         </p>
 
         <div className="grid grid-cols-1 gap-4 pt-8 text-base text-gray-300 mb-8">
