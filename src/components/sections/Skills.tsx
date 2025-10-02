@@ -42,13 +42,13 @@ export default function Skills() {
       <div className="mt-20 grid md:grid-cols-[auto_1fr]">
         {/* Texto SKILLS lateral para pantallas grandes */}
         <div className="hidden md:flex items-center justify-center border-r-4 border-amber-300 px-4">
-          <span className="font-bold text-green-600 rotate-270 tracking-widest text-xl">
+          <span className="font-bold text-[#A5D0A8] rotate-270 tracking-widest text-xl">
             SKILLS
           </span>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 p-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 p-4 bg-[#8CADA7]">
           {skills.map((skill) => (
             <SkillCard key={skill.name} {...skill} />
           ))}
