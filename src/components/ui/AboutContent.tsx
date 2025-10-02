@@ -2,9 +2,22 @@ import Button from "@mui/material/Button"
 
 export function AboutContent() {
   const name = "Adrian Calvache Sanchez"
-  const age = new Date().getFullYear() - 2004
   const location = "Barcelona, Spain"
   const email = "adriancalvachesanchez@gmail.com"
+
+  // 🔥 Calcular edad correctamente
+  const birthDate = new Date(2004, 11, 20) // mes 11 = diciembre (0-indexado)
+  const today = new Date()
+
+  let age = today.getFullYear() - birthDate.getFullYear()
+  const hasBirthdayPassed =
+    today.getMonth() > birthDate.getMonth() ||
+    (today.getMonth() === birthDate.getMonth() &&
+      today.getDate() >= birthDate.getDate())
+
+  if (!hasBirthdayPassed) {
+    age--
+  }
 
   return (
     <>
@@ -16,10 +29,10 @@ export function AboutContent() {
           Who am I?
         </h2>
         <p className="pt-10 text-lg leading-7">
-          I am a 20-year-old multiplatform app developer. My passion for
+          I am a {age} year old multiplatform app developer. My passion for
           technology began at an early age, spending countless hours playing on
           Nintendo and other consoles. That curiosity soon turned into a
-          question: `How are these games made?`
+          question: <code>How are these games made?</code>
         </p>
         <p className="pt-10 text-lg leading-7">
           Since then, I’ve been learning to code — starting with JavaScript,
