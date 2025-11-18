@@ -22,6 +22,13 @@ export function ProjectCard() {
         "This project is a app built in Vite and React, Typescript and Tailwind that help you with your code with help or improves, clean code...",
       imageUrl: "/review.png",
     },
+    {
+      title: "Application for register and manage your bike trails, specific for cyclists",
+      description:
+        "This application is a web platform for cyclists to register and manage their bike trails, providing a platform for cyclists to share their favorite routes and find new ones to explore.",
+      imageUrl: "/cyclemaps-hero.png",
+      projectUrl: "https://cyclemaps.vercel.app",
+    },
   ]
 
   return (
