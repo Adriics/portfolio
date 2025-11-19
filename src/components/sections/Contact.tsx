@@ -45,7 +45,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="grid grid-cols-1 p-8 sm:p-20 bg-gray-950">
+    <section id="contact" className="grid grid-cols-1 p-4 sm:p-15 bg-gray-950">
       <h1 className="w-49 text-4xl font-semibold tracking-widest font-poppins border-b-4 border-b-amber-300 mb-20">
         Contact
       </h1>
@@ -130,7 +130,7 @@ export function Contact() {
                 {messageFeedback}
               </Alert>
             )}
-            <div className="flex gap-4 text-sm pt-18 font-semibold">
+            <div className="flex gap-2 text-sm pt-18 font-semibold">
               {pages.map((p) => (
                 <div key={p.name}>
                   <a href={p.href}>{p.name}</a>
