@@ -37,28 +37,28 @@ export function ProjectCard() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="w-full h-100 flex flex-col max-w-5xl items-center mb-8 border rounded-lg overflow-hidden shadow-lg md:flex-col md:justify-center md:items-center"
+            className="w-full h-full flex flex-col max-w-5xl items-center mb-8 border rounded-lg overflow-hidden shadow-lg md:flex-col md:justify-center md:items-center"
           >
             <Image
               src={project.imageUrl}
               alt={project.title}
               width={600}
               height={400}
-              className="w-100 h-80 object-contain"
+              className="w-100 h-64 object-contain flex-shrink-0"
             />
             <article>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 md:text-2xl">
                   {project.title}
                 </h3>
-                <p className="text-gray-300 mb-4 text-sm md:text-xl">
+                <p className="text-gray-300 mb-4 text-sm md:text-xl flex-grow">
                   {project.description}
                 </p>
                 <a
                   href={project.projectUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 text-xl hover:underline md:text-sm"
+                  className="text-blue-400 text-xl hover:underline md:text-sm mt-auto"
                 >
                   View Project
                 </a>
